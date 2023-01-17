@@ -9,6 +9,8 @@ public class GestionImage  extends JFrame{
 	    setLayout(new BorderLayout());
 		f.add("East", new AWT_AfficheurImage());
 		f.add("West",new AWT_ListeImages());
+		f.add("West",new AWT_ListeImages());
+		f.add("South", new AWT_NoteImage());
 		f.setSize(1800,1000);
 		f.setVisible(true);
 		// TODO Auto-generated constructor stub

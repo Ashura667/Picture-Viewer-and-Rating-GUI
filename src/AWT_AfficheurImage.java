@@ -11,6 +11,7 @@ public class AWT_AfficheurImage extends JPanel{
 		this.icone = new ImageIcon(this.path_defaultString);
 		
 	    this.image = new JLabel(icone);
+	    this.image.setSize(640,360);
 	    add(image);
 		
 	}
