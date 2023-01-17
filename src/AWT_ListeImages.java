@@ -17,17 +17,20 @@ public class AWT_ListeImages extends JPanel {
 		 this.liste = new JList(choix);
 		 this.liste.setPreferredSize(new Dimension(500, 700));
 		 this.liste.addListSelectionListener(new ListSelectionListener() {
-			  public void valueChanged(ListSelectionEvent evt) {
-			    if (!evt.getValueIsAdjusting()) {
-			      // code here
-			    	System.out.println(liste.getSelectedValue());
-			    }
-			  }
-			});
+	            @Override
+	            public void valueChanged(ListSelectionEvent e) {
+	                JList list = (JList) e.getSource();
+	 
+	                // execute twice
+	                System.out.printf("=====%s=====%n", list.getSelectedValue());
+	                
+	            }
+	        });
 
 		 add(this.liste);
 
 	}
+	 
 	 
 
 	
